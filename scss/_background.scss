@@ -1,0 +1,21 @@
+.background {
+    width: 100%;
+
+    &__left {
+        background-color: $offWhite;
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &__right {
+        background-color: $offBlack;
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
