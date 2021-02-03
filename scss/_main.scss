@@ -1,0 +1,30 @@
+.main {
+    position: absolute;
+    z-index: 3;
+    width: 50%;
+    height: 100%;
+
+    &__left {
+        height: 100%;
+        flex-direction: column;
+        
+
+        &__text {
+            
+            div {
+                display: flex;
+                padding-right: 12.29%;
+                
+                h1 {
+                    font-size: 4rem;
+                }
+
+                :last-child {
+                    margin-left: 1rem;
+                    
+                }
+            }
+            
+        }
+    }
+}
