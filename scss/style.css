@@ -39,11 +39,18 @@ body {
           align-items: center;
 }
 
-.background {
-  width: 100%;
+.container {
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
-.background__left {
+.background {
+  width: 100%;
+  height: 100vh;
+}
+
+.background__left::before {
+  content: '';
   background-color: #F2F2F2;
   width: 50%;
   height: 100%;
@@ -52,7 +59,8 @@ body {
   left: 0;
 }
 
-.background__right {
+.background__right::before {
+  content: '';
   background-color: #202426;
   width: 50%;
   height: 100%;
@@ -66,7 +74,7 @@ body {
   top: 0;
   z-index: 3;
   width: 100%;
-  padding: 8.5rem 14rem 0 14rem;
+  padding-top: 5rem;
 }
 
 .header__logo img {
@@ -75,7 +83,7 @@ body {
 
 .header__list {
   width: 50%;
-  padding-left: 15rem;
+  padding-left: 5rem;
   list-style-type: none;
   color: #F2F2F2;
   font-size: 1.5rem;
@@ -113,30 +121,85 @@ body {
 .main {
   position: absolute;
   z-index: 3;
-  width: 50%;
+  width: 100%;
   height: 100%;
 }
 
 .main__left {
+  width: 50%;
   height: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-right: 7.3%;
+  padding-left: 5rem;
 }
 
-.main__left__text div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-right: 12.29%;
+.main__left__text :first-child {
+  float: left;
+  margin-right: 0.7rem;
+  color: #202426;
+  -webkit-box-shadow: 0px 0px 18px 0px #000000 25% inset;
+          box-shadow: 0px 0px 18px 0px #000000 25% inset;
 }
 
-.main__left__text div h1 {
+.main__left__text :nth-child(2) {
+  color: #6C733D;
+  -webkit-box-shadow: 0px 0px 18px 0px #000000 25% inset;
+          box-shadow: 0px 0px 18px 0px #000000 25% inset;
+}
+
+.main__left__text h1 {
   font-size: 4rem;
 }
 
-.main__left__text div :last-child {
-  margin-left: 1rem;
+.main__left__text h2 {
+  font-size: 2.5rem;
+  color: #202426;
+  -webkit-box-shadow: 0px 0px 18px 0px #000000 25% inset;
+          box-shadow: 0px 0px 18px 0px #000000 25% inset;
+  margin-bottom: 4.2rem;
+}
+
+.main__left__button {
+  position: relative;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  color: white;
+  text-decoration: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1em 3em;
+  background: -webkit-gradient(linear, left top, right top, from(#6C733D), to(#9DA65D));
+  background: linear-gradient(90deg, #6C733D 0%, #9DA65D 100%);
+  -webkit-box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 41.5px;
+}
+
+.main__left__button::after {
+  content: '';
+  background-image: url(/img/Signature.svg);
+  background-size: 250px 150px;
+  position: absolute;
+  top: -60px;
+  left: 150px;
+  width: 250px;
+  height: 150px;
+}
+
+.main__left__social {
+  margin-top: 5rem;
+}
+
+.main__left__social img {
+  width: 40px;
+}
+
+.main__left__social :not(:last-child) {
+  margin-right: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

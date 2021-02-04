@@ -1,7 +1,9 @@
 .background {
     width: 100%;
+    height: 100vh;
 
-    &__left {
+    &__left::before{
+        content: '';
         background-color: $offWhite;
         width: 50%;
         height: 100%;
@@ -10,7 +12,8 @@
         left: 0;
     }
 
-    &__right {
+    &__right::before{
+        content: '';
         background-color: $offBlack;
         width: 50%;
         height: 100%;

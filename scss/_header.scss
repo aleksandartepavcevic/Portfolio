@@ -3,7 +3,7 @@
     top: 0;
     z-index: 3;
     width: 100%;
-    padding: 8.5rem 14rem 0 14rem;
+    padding-top: 5rem;
 
     &__logo {
         img {
@@ -13,7 +13,7 @@
 
     &__list {
         width: 50%;
-        padding-left: 15rem;
+        padding-left: 5rem;
         list-style-type: none;
         color: $offWhite;
         font-size: 1.5rem;
