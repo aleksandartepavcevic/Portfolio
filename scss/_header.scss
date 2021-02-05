@@ -10,43 +10,4 @@
             width: 60px;
         }
     }
-
-    &__list {
-        width: 50%;
-        padding-left: 5rem;
-        list-style-type: none;
-        color: $offWhite;
-        font-size: 1.5rem;
-        font-weight: 400;
-        
-        li {
-            position: relative;
-            padding: 0.5rem 0;
-        }
-
-        li::before {
-            content: "";
-            position: absolute;
-            height: 3px;
-            width: 100%;
-            background-color: $lightGreen;
-            opacity: 0;
-            bottom: -5px;
-        }
-
-        li:hover {
-            color: $lightGreen;
-            transition: color ease-in-out 200ms;
-            cursor: pointer;
-            
-            &::before {
-                opacity: 1;
-                transition: opacity ease-in-out 200ms;
-            }
-        }
-
-
-    }
-
-    
 }

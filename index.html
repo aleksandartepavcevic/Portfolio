@@ -5,34 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./scss/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Aleksandar Tepavcevic</title>
 </head>
 <body>
     <header class="header container">
-        <nav class="flex flex-jc-sb flex-ai-c">
-            <a href="#" class="header__logo"><img src="./img/Logo.svg" alt="Logo"></a>
-            <ul class="header__list flex flex-jc-sb flex-ai-c">
-                <li>About</li>
-                <li>Portfolio</li>
-                <li>Contact me</li>
-            </ul>
-        </nav>
+        <a href="#" class="header__logo"><img src="./img/Logo.svg" alt="Logo"></a>
     </header>
 
     <main class="main">
-        <div class="main__left flex flex-jc-c">
+        <div class="main__left flex flex-jc-c flex-ai-c">
             <div class="main__left__content">
                 <div class="main__left__text">
                     <h1>Aleksandar</h1>
                     <h1>Tepavčević</h1>
                     <h2>Front-end Developer</h2>
                 </div>
-                <a href="#" class="main__left__button">Hire me</a>
+                <div class="main__left__middle">
+                    <a href="#" class="main__left__middle__button">Hire me</a>
+                    <img src="./img/Signature.svg" alt="Signature" class="main__left__middle__signature">
+                </div>
                 <div class="main__left__social flex  flex-ai-c">
-                    <img src="./img/logo-github.svg" alt="github">
+                    <img src="./img/github.svg" alt="github">
                     <img src="./img/upwork.svg" alt="upwork">
-                    <img src="./img/logo-linkedin.svg" alt="linkedin">
+                    <img src="./img/linkedin.svg" alt="linkedin">
                     <img src="./img/mail.svg" alt="mail">
                 </div>
             </div>
@@ -43,12 +40,18 @@
         <div class="main__right flex flex-jc-c flex-ai-c">
             <h1>Passion, dedication,<br>and a lot of <span>coffee.</span></h1>
         </div>
+
+        <aside class="main__aside flex flex-ai-c flex-jc-c">
+            <nav class="flex ">
+                <ul class="main__aside__list flex flex-jc-sb">
+                    <li>ABOUT</li>
+                    <li>PORTFOLIO</li>
+                    <li>CONTACT ME</li>
+                </ul>
+            </nav>
+        </aside>
     </main>
-    <!-- <main class="main">
-        <div class="main__left flex flex-jc-c flex-ai-c">
-            
-        </div>
-    </main> -->
+    
     <div class="background">
         <div class="background__left"></div>
         <div class="background__right"></div>

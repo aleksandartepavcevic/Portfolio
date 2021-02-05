@@ -11,6 +11,9 @@
         padding-right: 7.3%;
         padding-left: 5rem;
 
+        &__content {
+            width: 500px;
+        }
 
         &__text {
             :first-child {
@@ -35,29 +38,33 @@
             }
         }
 
-        &__button {
+        &__middle {
             position: relative;
-            font-size: 1.2rem;
-            font-weight: 600;
-            border: none;
-            color: white;
-            text-decoration: none;
-            width: fit-content;
-            padding: 1em 3em;
-            background: linear-gradient(90deg, #6C733D 0%, #9DA65D 100%);
-            box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
-            border-radius: 41.5px;
-        }
 
-        &__button::after {
-            content: '';
-            background-image: url(/img/Signature.svg);
-            background-size: 250px 150px;
-            position: absolute;
-            top: -60px;
-            left: 150px;
-            width: 250px;
-            height: 150px;
+            &__button {
+                font-size: 1.2rem;
+                font-weight: 600;
+                border: none;
+                color: white;
+                text-decoration: none;
+                width: fit-content;
+                padding: 1em 3em;
+                background: linear-gradient(90deg, $offBlack 0%, $darkerGreen 100%);
+                box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 41.5px;
+            }
+    
+            &__button:hover {
+                background: linear-gradient(90deg, #6c733dbb 0%, #9da65db7 100%);
+            }
+    
+            &__signature {
+                position: absolute;
+                bottom: -60px;
+                left: 170px;
+                width: 250px;
+                height: 150px;
+            }
         }
 
         &__social {
@@ -68,8 +75,9 @@
             }
 
             img:hover {
-                filter: invert(40%) sepia(53%) saturate(369%) hue-rotate(28deg) brightness(93%) contrast(85%);
+                background-color: red;
                 transition: filter ease-in-out 200ms;
+                cursor: pointer;
             }
 
             :not(:last-child) {
@@ -83,7 +91,8 @@
             position: absolute;
             z-index: 3;
             bottom: 0;
-            width: 550px;
+            width: 630px;
+            padding-right: 50px;
         }
     }
 
@@ -102,7 +111,54 @@
         }
 
         span {
+            color: $darkerGreen;
+        }
+    }
+
+    &__aside {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 3;
+        width: 100px;
+        height: 100%;
+        
+        nav {
+            transform: rotate(-90deg);
+        }
+
+        &__list {
+            list-style-type: none;
+            color: $offWhite;
+            font-size: 1.2rem;
+            font-weight: 300;
+            width: 540px;
+        }  
+        
+        li {
+            position: relative;
+            padding: 0.5rem 0;
+        }
+
+        li::before {
+            content: "";
+            position: absolute;
+            height: 1px;
+            width: 100%;
+            background-color: $lightGreen;
+            opacity: 0;
+            bottom: 0px;
+        }
+
+        li:hover {
             color: $lightGreen;
+            transition: color ease-in-out 250ms;
+            cursor: pointer;
+            
+            &::before {
+                opacity: 1;
+                transition: opacity ease-in-out 150ms;
+            }
         }
     }
 }
