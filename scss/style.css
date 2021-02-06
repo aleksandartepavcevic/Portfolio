@@ -72,7 +72,7 @@ body {
 .header {
   position: absolute;
   top: 0;
-  z-index: 3;
+  z-index: 2;
   width: 100%;
   padding-top: 5rem;
 }
@@ -118,9 +118,10 @@ body {
 }
 
 .main__left__text h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #1D3557;
   margin-bottom: 4.2rem;
+  font-weight: 400;
 }
 
 .main__left__middle {
@@ -145,33 +146,32 @@ body {
 }
 
 .main__left__middle__button:hover {
-  background: -webkit-gradient(linear, left top, right top, from(#6c733dbb), to(#9da65db7));
-  background: linear-gradient(90deg, #6c733dbb 0%, #9da65db7 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#1d3557d0), to(#e63947d3));
+  background: linear-gradient(90deg, #1d3557d0 0%, #e63947d3 100%);
 }
 
 .main__left__middle__signature {
   position: absolute;
   bottom: -60px;
-  left: 170px;
+  left: 150px;
   width: 250px;
   height: 150px;
 }
 
 .main__left__social {
   margin-top: 5rem;
-  margin-left: 14rem;
+  margin-left: 16rem;
 }
 
 .main__left__social img {
-  width: 40px;
+  width: 30px;
 }
 
 .main__left__social img:hover {
-  background-color: red;
-  -webkit-transition: -webkit-filter ease-in-out 200ms;
-  transition: -webkit-filter ease-in-out 200ms;
-  transition: filter ease-in-out 200ms;
-  transition: filter ease-in-out 200ms, -webkit-filter ease-in-out 200ms;
+  -webkit-filter: brightness(0) saturate(100%);
+          filter: brightness(0) saturate(100%);
+  -webkit-filter: invert(23%) sepia(99%) saturate(2849%) hue-rotate(342deg) brightness(79%) contrast(150%);
+          filter: invert(23%) sepia(99%) saturate(2849%) hue-rotate(342deg) brightness(79%) contrast(150%);
   cursor: pointer;
 }
 
@@ -183,7 +183,8 @@ body {
   position: absolute;
   z-index: 3;
   bottom: 0;
-  width: 630px;
+  width: 32.81%;
+  max-width: 630px;
   padding-right: 50px;
 }
 
@@ -214,7 +215,7 @@ body {
   top: 0;
   right: 0;
   z-index: 3;
-  width: 100px;
+  width: 40px;
   height: 100%;
 }
 
@@ -239,11 +240,11 @@ body {
 .main__aside li::before {
   content: "";
   position: absolute;
-  height: 1px;
+  height: 3px;
   width: 100%;
-  background-color: #A8DADC;
+  background-color: #E63946;
   opacity: 0;
-  bottom: 0px;
+  bottom: -6px;
 }
 
 .main__aside li:hover {
@@ -251,6 +252,7 @@ body {
   -webkit-transition: color ease-in-out 250ms;
   transition: color ease-in-out 250ms;
   cursor: pointer;
+  font-weight: 600;
 }
 
 .main__aside li:hover::before {
